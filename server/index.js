@@ -14,7 +14,6 @@ app.use(cors())
 
 app.use('/', router)
 
-
 sequelize.sync()
 .then(() => {
     app.listen(config.port)    
